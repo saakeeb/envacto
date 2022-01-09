@@ -2,5 +2,5 @@
 
 ## Figma px to % convert process
 1. Figma px / 100 = ?%
-example: 
+#example: 
     371px/100=3.71%

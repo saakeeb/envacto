@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --tpad-83: 83px; /*t mean tfm */
+    --left-width: 26vw; /*about section left price*/
+    --right-width: 23vw; /*about section right price*/
 }
 
 body{
@@ -42,6 +50,7 @@ body{
         display: flex;
         justify-content: space-around;
         flex-basis: 90%;
+        padding-top: 15px;
     }
 
     .hero-section .nav-links li{
@@ -51,7 +60,7 @@ body{
     .hero-section .nav-links a{
         color: #F2F2F2;
         text-decoration: none;
-        letter-spacing: 3px;
+        /* letter-spacing: 3px; */
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -1121,3 +1130,19 @@ body{
     }
 }
 /* about-price-section */
+
+
+
+
+/* extra lib */
+.pad-50px {
+    padding: 50px !important;
+}
+
+.package-left-section {
+    width: var(--left-width) !important; 
+}
+
+.package-right-section {
+    max-width: var(--right-width) !important;
+}
