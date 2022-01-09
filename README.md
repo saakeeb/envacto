@@ -1,6 +1,10 @@
 ## TFMToolPro
 
 # Figma px to % convert process
-    Figma px / 100 = ?%
+
+For width use vw and height use vh
+
+    (Figma px / Figma total width or height) * 100 = ? vw or vh
+    
 # example: 
-    371px/100=3.71%
+    371px/1440px*100=25.26vw
