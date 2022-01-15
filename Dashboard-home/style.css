@@ -410,7 +410,12 @@ body{
         color: #4B5563;
     }
     .about-distributor-section .body{
-        padding: 10px 0 40px;
+        padding: 5px 0 40px;
+    }
+    .about-distributor-section .body-content{
+        /* margin: 5px 0 40px; */
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+        border-radius: 4px;
     }
     .about-distributor-section .body .dashboard{
         display: table;
