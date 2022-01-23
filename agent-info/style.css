@@ -420,9 +420,26 @@ body{
     z-index: 10;
     margin: auto;
 }
-.about-card-section .top .map img{
+.about-card-section .top .map .gmap_canvas{
     display: block;
-    padding: 10px;
+    overflow: hidden;
+    background: none !important;
+
+}
+
+.about-card-section .top .map .mapouter {
+    position: relative;
+    text-align: right;
+}
+
+.about-card-section .top .map .gmap_canvas iframe,
+.about-card-section .top .map .mapouter,
+.about-card-section .top .map .gmap_canvas
+.about-card-section .top .map #le{
+    max-width: 1140px;
+    width: 100%;
+    height: 480px;
+    border-radius: 32px;
 }
 .about-card-section .top .search-contents{
     max-width: 1140px;
@@ -432,7 +449,7 @@ body{
     margin: auto;
 }
 .about-card-section .top .search-bar{
-    max-width: 1020px;
+    max-width: 1120px;
     width: 100%;
     position: relative;
     padding: 80px 80px 15px;
@@ -442,17 +459,24 @@ body{
 .about-card-section .top .search-bar form{
     position: relative;
     border: 2px solid #EDE9FE;
+    box-sizing: border-box;
     border-radius: 8px;
+    height: 70px;
 }
 
 .about-card-section .top .search-bar form input{
     border: none;
     background: #4C1D95;
-    color: #fff;
+    color: #E5E7EB;
 }
 
 .about-card-section .top .search-bar form input::placeholder{
-    color: #fff;
+    color: #D1D5DB;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
 }
 
 .about-card-section .top .search-bar form input:focus,
@@ -463,9 +487,12 @@ body{
 
 .about-card-section .top .search-bar form .btn-dropdown,
 .about-card-section .top .search-bar form .btn-dropdown:hover{
-    color: #fff;
-    padding: 0 25px 0;
+    padding: 0 40px 0;
     position: relative;
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    line-height: 28px;
+    color: #E5E7EB;
 }
 
 .about-card-section .top .search-bar form .btn-dropdown::before{
@@ -482,6 +509,11 @@ body{
 .about-card-section .top .search-bar form .btn-search{
     border: 2px solid #ffc107;
     outline: 2px solid  #ffc107;
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    line-height: 28px;
+    color: #111827;
+    padding: 0 50px;
 }
 
 .about-card-section .top .search-content p{
@@ -489,7 +521,7 @@ body{
     line-height: 16px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
-    margin: 12px auto 15px;
+    margin: 24px auto 12px;
 }
 
 .about-card-section .top .search-content .search-country{
@@ -498,7 +530,7 @@ body{
 
 .about-card-section .top .search-content .search-country > div{
     display: inline-block;
-    padding: 8px 10px;
+    padding: 12px 16px;
     background-color: #fff;
     border-radius: 4px;
     margin: 5px;
@@ -651,6 +683,13 @@ body{
         font-size: 14px;
         line-height: normal;
     }
+
+    .about-card-section .top .search-content .search-country > div{
+        padding: 8px;
+    }
+    .about-card-section .top .search-bar form .btn-search{
+        padding: 0 20px 0;
+    }
 }
 @media screen and (max-width:1023px) {
     .about-card-section .distributors .reseller{
@@ -681,6 +720,19 @@ body{
     .about-card-section .top{
         margin: -100px auto 0;
     }
+    .about-card-section .top .search-bar form .btn-dropdown, 
+    .about-card-section .top .search-bar form .btn-dropdown:hover{
+        padding: 0 15px 0;
+    }
+    .about-card-section .top .search-bar form{
+        height: 50px;
+    }
+    .about-card-section .top .map .gmap_canvas iframe,
+    .about-card-section .top .map .mapouter,
+    .about-card-section .top .map .gmap_canvas
+    .about-card-section .top .map #le{
+        height: 350px;
+    }
 }
 @media screen and (max-width:767px) {
     .about-card-section .distributors .distributor{
@@ -696,15 +748,18 @@ body{
         max-width: 100%;
         padding: 80px 20px 15px;
     }
-    .about-card-section .top .search-bar form .btn-dropdown, 
-    .about-card-section .top .search-bar form .btn-dropdown:hover{
-        padding: 0 15px 0;
-    }
+    
     .about-card-section .top .search-content .search-country > div{
         padding: 5px;
     }
     .about-card-section .top .search-content .search-country > div a{
         font-size: 12px;
+    }
+    .about-card-section .top .map .gmap_canvas iframe,
+    .about-card-section .top .map .mapouter,
+    .about-card-section .top .map .gmap_canvas
+    .about-card-section .top .map #le{
+        height: 240px;
     }
 }
 /* about-card-section */
